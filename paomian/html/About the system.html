@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于系统</title>	
+	<style type="text/css">
+	#mydiv{
+		position: absolute;
+		left: 600px;
+		width: 180px;
+		height: 50px;
+		padding: 20px;
+		border: 3px solid lightblue;
+		background-color: lightblue;
+	}
+	#subDiv1{
+		   position: absolute;
+		   width: 1500px;
+		   height:750px;
+		   left: 250px;
+		   top: 100px;
+		   color: white;
+		   background-color: #FFB6C1;	
+		   z-index: 101
+		}
+	#subDiv2{
+		   position: absolute;
+		   left: 550px;
+		   top: 300px;
+		   color: white;	
+		   z-index: 101
+		}
+	</style>
+	<script type="text/javascript">
+	function $(id){
+		return document.getElementById(id);
+	}
+	function test(){
+		alert($("mydiv").offsetWidth); 
+	}
+   </script>
+</head>
+<body>
+
+	<div id="subDiv1" style=" text-align:center">
+		<div id ="mydiv">
+			<font size="5"><p style=" text-align:center">欢迎使用</p></font>
+		</div>
+		<font size="12"><div id="subDiv2">
+			<p>技术支持</p>
+			<p>联系电话：123456</p>
+			<p>地址:中三322</p>
+			<br><br>
+			<div><a href="">返回</a></div>
+		</div></font>
+	</div>	
+
+
+</body>
+</html>
