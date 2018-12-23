@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>日程添加</title>
+	<style type="text/css">
+
+	#mydiv{
+		width: 120px;
+		height: 50px;
+		padding: 20px;
+		border: 3px solid lightblue;
+		background-color: lightblue;
+	}
+	#mydiv1{
+
+		width: 1860px;
+		height: 30px;
+		padding: 5px 10px;
+		border: 3px solid lightblue;
+		background-color: lightblue;
+
+	}
+	
+	</style>
+    <script type="text/javascript">
+	function $(id){
+		return document.getElementById(id);
+	}
+	function test(){
+		alert($("mydiv").offsetWidth); 
+	}
+   </script>
+</head>
+
+<body>
+<div id="mydiv1">
+<p style=" text-align:center">日程添加</p>
+<br><br><br>
+</div>
+
+<form action="" style=" text-align:center" method="post">
+	约会人:	<input type="text" name ="name"  placeholder="约会人编号">
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	电话: <input type="text" name ="name"  placeholder="约会人电话">
+	<br><br><br>
+
+	被约会人:	<input type="text" name ="name"  placeholder="被约会人编号">
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	电话: <input type="text" name ="name"  placeholder="被约会人电话">
+	<br><br><br>
+
+	被约时间:	<input type="text" name ="name"  placeholder="约会时间">
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	服务人: <input type="text" name ="name"  placeholder="服务人">
+	<br><br><br>
+
+	<button type="submit" value="Submit">保存</button>
+     	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <button type="reset" value="Reset">重置</button>
+  
+</form>
+
+
+       
+</body>
+</html>
